@@ -52,6 +52,7 @@ class FloatingBubbleService : Service() {
     private const val BADGE_SIZE_DP = 20f
     private const val BADGE_TEXT_SP = 11f
     private const val BADGE_MAX = 99
+    private const val BADGE_COLOR = 0xFFE53935.toInt()
     private const val EDGE_MARGIN_PX = 16
     private const val INITIAL_Y = 200
     private const val TAP_THRESHOLD_PX = 10
@@ -159,9 +160,7 @@ class FloatingBubbleService : Service() {
     Log.d(TAG, "showBubbleView() existing=${bubbleView != null} canOverlay=${android.provider.Settings.canDrawOverlays(this)}")
     if (bubbleView != null) return
 
-    val sizePx = TypedValue.applyDimension(
-      TypedValue.COMPLEX_UNIT_DIP, BUBBLE_SIZE_DP, resources.displayMetrics
-    ).toInt()
+    val sizePx = dpToPx(BUBBLE_SIZE_DP)
 
     @Suppress("DEPRECATION")
     val overlayType = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
@@ -222,7 +221,7 @@ class FloatingBubbleService : Service() {
   private fun buildBadgeView(): TextView {
     val background = GradientDrawable().apply {
       shape = GradientDrawable.OVAL
-      setColor(Color.parseColor("#E53935"))
+      setColor(BADGE_COLOR)
       setStroke(dpToPx(1.5f), Color.WHITE)
     }
     return TextView(this).apply {
