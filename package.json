@@ -41,18 +41,28 @@
   "keywords": [
     "react-native",
     "ios",
-    "android"
+    "android",
+    "floating-bubble",
+    "bubble",
+    "chat-head",
+    "overlay",
+    "android-overlay",
+    "system-alert-window",
+    "foreground-service",
+    "draggable",
+    "turbo-module",
+    "expo"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/beedelivery/react-native-android-floating-bubble.git"
+    "url": "git+https://github.com/EstevamBruno/react-native-android-floating-bubble.git"
   },
-  "author": "Bee Delivery <bruno.kennedy@beedelivery.com.br> (https://github.com/beedelivery)",
+  "author": "Estevam Bruno <bruno.kennedy@beedelivery.com.br> (https://github.com/EstevamBruno)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/beedelivery/react-native-android-floating-bubble/issues"
+    "url": "https://github.com/EstevamBruno/react-native-android-floating-bubble/issues"
   },
-  "homepage": "https://github.com/beedelivery/react-native-android-floating-bubble#readme",
+  "homepage": "https://github.com/EstevamBruno/react-native-android-floating-bubble#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },

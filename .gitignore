@@ -84,3 +84,9 @@ android/generated
 
 # React Native Nitro Modules
 nitrogen/
+
+# OpenSpec SDD artifacts (local workflow, not part of the package)
+openspec/
+
+# Local agent/editor tooling
+.claude/
